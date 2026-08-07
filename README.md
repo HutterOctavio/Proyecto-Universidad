@@ -63,39 +63,6 @@ El proyecto está organizado siguiendo una arquitectura por capas para separar l
 
 ---
 
-## Estructura del Proyecto
-
-```
-ProyectoUniversidad/
-│
-├── src/
-│   ├── igu/
-│   │   ├── PanelAlumno.java
-│   │   ├── PanelProfesor.java
-│   │   ├── PanelCarrera.java
-│   │   ├── PanelMateria.java
-│   │   ├── PanelCursada.java
-│   │   ├── PanelInscripciones.java
-│   │   └── ...
-│   │
-│   ├── logica/
-│   │   ├── Alumno.java
-│   │   ├── Profesor.java
-│   │   ├── Carrera.java
-│   │   ├── Materia.java
-│   │   ├── Controladora.java
-│   │   └── ...
-│   │
-│   └── persistencia/
-│       ├── ControladoraPersistencia.java
-│       ├── AlumnoJpaController.java
-│       ├── ProfesorJpaController.java
-│       └── ...
-│
-├── pom.xml
-└── README.md
-```
-
 ---
 
 ## Modelo del Sistema
