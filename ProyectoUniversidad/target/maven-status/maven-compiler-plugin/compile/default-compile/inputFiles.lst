@@ -1,0 +1,17 @@
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/ProyectoUniversidad.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelAlumno.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelCarrera.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelConsultas.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelCursada.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelInscripciones.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelMateria.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/PanelProfesor.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/Refrescable.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/igu/VentanaPrincipal.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Alumno.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Carrera.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Controladora.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Cursada.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Materia.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/logica/Profesor.java
+/home/vexx/NetBeansProjects/ProyectoUniversidad (2)/src/main/java/com/mycompany/proyectouniversidad/persistencia/ControladoraPersistencia.java
