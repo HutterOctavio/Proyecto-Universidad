@@ -137,21 +137,6 @@ Durante el desarrollo del proyecto se aplicaron conceptos como:
 - Maven
 
 ---
-
-## Capturas
-
-Puedes agregar capturas del sistema aquí.
-
-```
-docs/
-
-├── menu-principal.png
-├── alumnos.png
-├── profesores.png
-├── carreras.png
-└── materias.png
-```
-
 ---
 
 ## Mejoras Futuras
