@@ -1,103 +1,204 @@
 # Proyecto Universidad
 
-Sistema de gestión universitaria desarrollado en **Java** con arquitectura por capas, interfaz gráfica en **Swing**, persistencia mediante **JPA (EclipseLink)** y base de datos **MySQL**.
+Sistema de gestión universitaria desarrollado en **Java**, utilizando una arquitectura por capas, interfaz gráfica con **Java Swing**, persistencia mediante **JPA (EclipseLink)** y base de datos **MySQL**.
+
+El objetivo del proyecto es administrar de manera sencilla la información académica de una institución educativa, permitiendo gestionar alumnos, profesores, carreras, materias, cursadas e inscripciones desde una aplicación de escritorio.
 
 ---
 
 ## Tecnologías
 
-<p align="left">
-  <img src="https://skillicons.dev/icons?i=java,mysql,maven,git,github" />
-</p>
-
-**Frameworks y librerías**
-
-- Java Swing
-- JPA (EclipseLink)
-- JDBC
-- Maven
+| Tecnología | Uso |
+|------------|-----|
+| Java | Lenguaje de programación |
+| Java Swing | Interfaz gráfica de escritorio |
+| JPA (EclipseLink) | Persistencia de datos |
+| JDBC | Conexión con la base de datos |
+| MySQL | Sistema gestor de base de datos |
+| Maven | Gestión de dependencias y compilación |
 
 ---
 
 ## Características
 
-- Gestión de alumnos
-- Gestión de profesores
-- Gestión de carreras
-- Gestión de materias
-- Gestión de cursadas
-- Gestión de inscripciones
-- Consultas de información
-- Persistencia de datos mediante JPA
+- Gestión de alumnos.
+- Gestión de profesores.
+- Administración de carreras.
+- Administración de materias.
+- Gestión de cursadas.
+- Registro de inscripciones.
+- Consultas de información.
+- Persistencia automática mediante JPA.
+- Interfaz gráfica intuitiva desarrollada con Swing.
 
 ---
 
 ## Arquitectura
 
+El proyecto está organizado siguiendo una arquitectura por capas para separar las responsabilidades de cada componente.
+
 ```
-┌───────────────────────┐
-│    Interfaz (Swing)   │
-└──────────┬────────────┘
-           │
-┌──────────▼────────────┐
-│  Lógica de Negocio    │
-│    (Controladora)     │
-└──────────┬────────────┘
-           │
-┌──────────▼────────────┐
-│     Persistencia      │
-│  JPA / EclipseLink    │
-└──────────┬────────────┘
-           │
-┌──────────▼────────────┐
-│       MySQL           │
-└───────────────────────┘
+┌──────────────────────────────┐
+│      Interfaz Gráfica        │
+│          (Swing)             │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│      Lógica de Negocio       │
+│        Controladora          │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│        Persistencia          │
+│    JPA (EclipseLink)         │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│           MySQL              │
+└──────────────────────────────┘
 ```
 
 ---
 
-## Estructura
+## Estructura del Proyecto
 
 ```
-src/
-├── igu/
-├── logica/
-├── persistencia/
-└── ProyectoUniversidad.java
+ProyectoUniversidad/
+│
+├── src/
+│   ├── igu/
+│   │   ├── PanelAlumno.java
+│   │   ├── PanelProfesor.java
+│   │   ├── PanelCarrera.java
+│   │   ├── PanelMateria.java
+│   │   ├── PanelCursada.java
+│   │   ├── PanelInscripciones.java
+│   │   └── ...
+│   │
+│   ├── logica/
+│   │   ├── Alumno.java
+│   │   ├── Profesor.java
+│   │   ├── Carrera.java
+│   │   ├── Materia.java
+│   │   ├── Controladora.java
+│   │   └── ...
+│   │
+│   └── persistencia/
+│       ├── ControladoraPersistencia.java
+│       ├── AlumnoJpaController.java
+│       ├── ProfesorJpaController.java
+│       └── ...
+│
+├── pom.xml
+└── README.md
 ```
+
+---
+
+## Modelo del Sistema
+
+El sistema trabaja con diferentes entidades relacionadas entre sí.
+
+- Alumno
+- Profesor
+- Carrera
+- Materia
+- Cursada
+- Inscripción
+
+Cada una de ellas es administrada mediante JPA y almacenada en una base de datos MySQL.
 
 ---
 
 ## Instalación
 
+### 1. Clonar el repositorio
+
 ```bash
 git clone https://github.com/tuusuario/ProyectoUniversidad.git
 ```
 
-Configurar la conexión en `persistence.xml` y ejecutar el proyecto desde NetBeans o cualquier IDE compatible con Maven.
+### 2. Abrir el proyecto
+
+Puede abrirse con cualquier IDE compatible con Maven, por ejemplo:
+
+- Apache NetBeans
+- IntelliJ IDEA
+- Eclipse
+
+### 3. Configurar la base de datos
+
+Crear una base de datos MySQL y modificar los datos de conexión en el archivo:
+
+```
+src/main/resources/META-INF/persistence.xml
+```
+
+Actualizando:
+
+- Usuario
+- Contraseña
+- Nombre de la base de datos
+
+### 4. Ejecutar
+
+Compilar el proyecto:
+
+```bash
+mvn clean install
+```
+
+o ejecutarlo directamente desde el IDE.
 
 ---
 
-## Conceptos implementados
+## Conceptos Aplicados
 
-- Programación Orientada a Objetos
+Durante el desarrollo del proyecto se aplicaron conceptos como:
+
+- Programación Orientada a Objetos (POO)
 - Arquitectura en Capas
 - CRUD completo
 - Persistencia con JPA
 - Relaciones entre entidades
-- Manejo de eventos en Swing
+- Manejo de eventos
+- Encapsulamiento
+- Polimorfismo
+- Herencia
+- JDBC
+- Maven
 
 ---
 
 ## Capturas
 
-> Agrega aquí imágenes del sistema.
+Puedes agregar capturas del sistema aquí.
 
 ```
-/docs/login.png
-/docs/alumnos.png
-/docs/profesores.png
+docs/
+
+├── menu-principal.png
+├── alumnos.png
+├── profesores.png
+├── carreras.png
+└── materias.png
 ```
+
+---
+
+## Mejoras Futuras
+
+- Sistema de autenticación.
+- Gestión de roles de usuario.
+- Reportes en PDF.
+- Exportación a Excel.
+- Dashboard con estadísticas.
+- Migración a JavaFX.
+- API REST.
+- Integración con PostgreSQL.
 
 ---
 
@@ -107,4 +208,10 @@ Configurar la conexión en `persistence.xml` y ejecutar el proyecto desde NetBea
 
 Estudiante de Analista de Sistemas.
 
-[![GitHub](https://img.shields.io/badge/GitHub-octaviohutter-181717?style=for-the-badge&logo=github)](https://github.com/TUUSUARIO)
+Proyecto desarrollado con fines académicos para aplicar conocimientos de programación orientada a objetos, desarrollo de aplicaciones de escritorio y persistencia de datos.
+
+---
+
+## Licencia
+
+Este proyecto se distribuye únicamente con fines educativos y de aprendizaje.
