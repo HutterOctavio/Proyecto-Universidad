@@ -61,7 +61,13 @@ El proyecto está organizado siguiendo una arquitectura por capas para separar l
 └──────────────────────────────┘
 ```
 
----
+
+
+<img width="1099" height="702" alt="image" src="https://github.com/user-attachments/assets/82a39e1d-6f1e-4c45-a5b6-fb53746db17e" />
+
+
+
+
 
 ---
 
