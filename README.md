@@ -112,8 +112,6 @@ Actualizando:
 
 ### 4. Ejecutar
 
-Compilar el proyecto:
-
 ```bash
 mvn clean install
 ```
