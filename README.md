@@ -91,7 +91,7 @@ Cada una de ellas es administrada mediante JPA y almacenada en una base de datos
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/ProyectoUniversidad.git
+git clone https://github.com/HutterOctavio/ProyectoUniversidad.git
 ```
 
 ### 2. Abrir el proyecto
